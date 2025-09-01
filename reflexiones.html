@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflexiones de Estudiantes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="consejos.html">Consejos Éticos</a>
+            <a href="casos.html">Casos de Estudio</a>
+            <a href="reflexiones.html">Reflexiones</a>
+            <a href="recursos.html">Recursos</a>
+        </nav>
+    </header>
+    <main class="page-container">
+        <h1>Reflexiones de Estudiantes</h1>
+        <p>Comparte tu opinión sobre la ética en el uso de la IA.</p>
+        <form id="formulario-reflexion">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Reflexión:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+            <button type="submit">Enviar reflexión</button>
+        </form>
+        <hr>
+        <button id="borrar-mensajes">Borrar mensajes guardados</button>
+        <h2>Mensajes Recibidos:</h2>
+        <div id="mensajes-recibidos">
+            </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Portal Ético de Uso de IA</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
